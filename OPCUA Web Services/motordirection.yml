@@ -1,0 +1,15 @@
+Toggle motor direction
+---
+tags:
+  - Motor Control
+responses:
+  500:
+    description: OPC server is not reachable
+  200:
+    description: Gear current direction
+    schema:
+      id: message
+      properties:
+        message:
+          type: string
+          description: Gear direction response

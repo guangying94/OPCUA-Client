@@ -1,0 +1,30 @@
+API to get reading for all nodes
+---
+tags:
+  - Readings
+responses:
+  500:
+    description: OPC server is not reachable
+  200:
+    description: OPC UA server nodes current value
+    schema:
+      id: node value
+      properties:
+        GearModeEnable:
+          type: boolean
+          description: Status of gear motor
+        GearMotorTemperatureLeft:
+          type: integer
+          description: Temperature for left gear motor
+        GearMotorTemperatureRight:
+          type: integer
+          description: Temperature for right gear motor
+        GearMotorTurnDirection:
+          type: boolean
+          description: Gear motor turn direction in boolean. True is clockwise, False is anti-clockwise
+        SetGearMotorSpeed:
+          type: integer
+          description: Current motor speed
+        ControlPanelOpsMode:
+          type: integer
+          description: Current control panel operation mode

@@ -1,0 +1,21 @@
+Set gear motor speed
+---
+tags:
+  - Motor Control
+parameters:
+  - name: speed
+    in: path
+    type: integer
+    required: true
+    description: Desire gear motor speed
+responses:
+  500:
+    description: OPC server is not reachable
+  200:
+    description: Gear speed
+    schema:
+      id: message
+      properties:
+        message:
+          type: string
+          description: Gear speed response
