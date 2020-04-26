@@ -6,6 +6,8 @@ This repository is a simple implementation using Python Flask to wrap python-opc
 
 Python-opcua is the main library to connect to OPC UA server easily, and Flask is used to develop API with basic authentication. Flasgger is the last component to provide swagger API page, with Open API schema.
 
+Dockerfile is provided for developer who needs to dockerize this api.
+
 ## Library used
 
 1. [Python opcua](https://github.com/FreeOpcUa/python-opcua)
